@@ -13,6 +13,7 @@ The logic is split between the individual Blender editors - in the Outliner (top
 ## Switching between rendering out ground truth and segmentation
 To switch between these two modes of rendering, we need to do two things: 
 * switch the "Label" attribute in the modifier tab - 0 is rgb rendering, 1 is segmentation rendering, where the color assigned to the pothole is #FF0000 (can be changed in Materials > Label). 
+![image](https://user-images.githubusercontent.com/46105170/174446330-55b5989c-380e-4e77-b891-3f94de442fb7.png)
 * change the connection in the compositor tab from alpha over an image, to alpha over pure black.
 ![blender_fjgivAQXtd](https://user-images.githubusercontent.com/46105170/174446532-b331e8d5-cb9d-40ed-8693-2ed08036aab9.gif)
 
@@ -24,6 +25,4 @@ Speed up generation of the label - it is unnecessarily rendering rgb and then pa
 More types of pothole could be added - alligator cracks and long cracks are under development right now, they can be integrated seamlessly into the existing Geometry node setup, creating a much more general pothole generator.
 ![image](https://user-images.githubusercontent.com/46105170/174447210-763dd959-c6d8-41c9-9497-00cd8bec5a33.png)
 
-
-![image](https://user-images.githubusercontent.com/46105170/174446330-55b5989c-380e-4e77-b891-3f94de442fb7.png)
 
