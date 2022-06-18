@@ -13,8 +13,10 @@ The logic is split between the individual Blender editors - in the Outliner (top
 ## Switching between rendering out ground truth and segmentation
 To switch between these two modes of rendering, we need to do two things: 
 * switch the "Label" attribute in the modifier tab - 0 is rgb rendering, 1 is segmentation rendering, where the color assigned to the pothole is #FF0000 (can be changed in Materials > Label). 
+
 ![image](https://user-images.githubusercontent.com/46105170/174446330-55b5989c-380e-4e77-b891-3f94de442fb7.png)
 * change the connection in the compositor tab from alpha over an image, to alpha over pure black.
+
 ![blender_fjgivAQXtd](https://user-images.githubusercontent.com/46105170/174446532-b331e8d5-cb9d-40ed-8693-2ed08036aab9.gif)
 
 ## Using your own image
